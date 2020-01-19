@@ -1,2 +1,2 @@
-# Automa-o
+# Automacao
 Testes automatizados de interface Web
