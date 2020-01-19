@@ -53,6 +53,7 @@ public class Tests extends Propriedades {
 		
 		
 	System.out.println(logo);
+	///Testando mudança
 }
 	
 	@AfterClass
