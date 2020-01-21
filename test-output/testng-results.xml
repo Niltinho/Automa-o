@@ -1,55 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16722" started-at="2020-01-21T11:48:45 BRT" finished-at="2020-01-21T11:49:01 BRT">
+  <suite name="Default suite" duration-ms="12395" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:26 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16722" started-at="2020-01-21T11:48:45 BRT" finished-at="2020-01-21T11:49:01 BRT">
+    <test name="Default test" duration-ms="12395" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:26 BRT">
       <class name="tests.CadastrarUsuario">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.CadastrarUsuario@50b472aa]" name="setUp" is-config="true" duration-ms="10202" started-at="2020-01-21T11:48:45 BRT" finished-at="2020-01-21T11:48:55 BRT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="setUp" is-config="true" duration-ms="10074" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:23 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testCadastrarUsuario()[pri:0, instance:tests.CadastrarUsuario@50b472aa]" name="testCadastrarUsuario" duration-ms="5800" started-at="2020-01-21T11:48:55 BRT" finished-at="2020-01-21T11:49:01 BRT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="testCadastrarUsuario()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario" duration-ms="1037" started-at="2020-01-21T16:13:23 BRT" finished-at="2020-01-21T16:13:24 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCadastrarUsuario -->
+        <test-method status="FAIL" signature="testCadastrarUsuario2()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario2" duration-ms="520" started-at="2020-01-21T16:13:24 BRT" finished-at="2020-01-21T16:13:25 BRT">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#toast\-container"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'OPENSANB-003342', ip: '10.51.161.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\318032\AppData\Local\Temp\scoped_dir16988_1969402278}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52970}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 440863c2d965579ebdf3ad87d063592c
-*** Element info: {Using=id, value=toast-container}]]>
+              <![CDATA[expected [Cadastrado!
+Nome: Nilton
+Sobrenome: Lucio Correia
+Sexo: Masculino
+Comida:
+Escolaridade: superior
+Esportes: Futebol Corrida
+Sugestoes:] but found [Cadastrado!
+Nome: Nilton
+Sobrenome: Lucio Correia
+Sexo: Masculino
+Comida: Carne Frango
+Escolaridade: superior
+Esportes: Futebol Corrida
+Sugestoes:!]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#toast\-container"}
-  (Session info: chrome=79.0.3945.117)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'OPENSANB-003342', ip: '10.51.161.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\318032\AppData\Local\Temp\scoped_dir16988_1969402278}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52970}, acceptInsecureCerts=false, browserVersion=79.0.3945.117, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 440863c2d965579ebdf3ad87d063592c
-*** Element info: {Using=id, value=toast-container}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at pages.BasePage.capturarTextoToast(BasePage.java:15)
-at tests.CadastrarUsuario.testCadastrarUsuario(CadastrarUsuario.java:39)
+              <![CDATA[java.lang.AssertionError: expected [Cadastrado!
+Nome: Nilton
+Sobrenome: Lucio Correia
+Sexo: Masculino
+Comida:
+Escolaridade: superior
+Esportes: Futebol Corrida
+Sugestoes:] but found [Cadastrado!
+Nome: Nilton
+Sobrenome: Lucio Correia
+Sexo: Masculino
+Comida: Carne Frango
+Escolaridade: superior
+Esportes: Futebol Corrida
+Sugestoes:!]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at tests.CadastrarUsuario.testCadastrarUsuario2(CadastrarUsuario.java:70)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,11 +86,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCadastrarUsuario -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CadastrarUsuario@50b472aa]" name="tearDown" is-config="true" duration-ms="591" started-at="2020-01-21T11:49:01 BRT" finished-at="2020-01-21T11:49:01 BRT">
+        </test-method> <!-- testCadastrarUsuario2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="tearDown" is-config="true" duration-ms="637" started-at="2020-01-21T16:13:25 BRT" finished-at="2020-01-21T16:13:26 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -15,4 +15,9 @@ public class BasePage {
         WebElement mensagemPop = driver.findElement(By.id("toast-container"));
         return mensagemPop.getText();
     }
+    
+    public String capturarCadastro() {
+    	WebElement mensagemCadastro = driver.findElement(By.id("resultado"));
+    	return mensagemCadastro.getText();
+    }
 }
