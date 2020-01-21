@@ -19,7 +19,8 @@ public class CadastrarUsuario {
 	@BeforeClass
 	public void setUp() {
 		driver = Inicializar.createChrome();
-		driver.get("file:///C:/Users/Nilton/eclipse-workspace/EstudosNilton/componentes.html");
+		//driver.get("file:///C:/Users/Nilton/eclipse-workspace/EstudosNilton/componentes.html");
+		driver.get("file:///C:/Users/318032/eclipse-workspace/Automacao/componentes.html");
 		campoTreinamentoPage = new CampoTreinamentoPage(driver);
 		basePage = new BasePage(driver);
 	}

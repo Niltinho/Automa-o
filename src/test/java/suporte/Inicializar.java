@@ -16,7 +16,7 @@ public class Inicializar {
 
     public static WebDriver createChrome() {
         // Abrindo o Navegador
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nilton\\EstudosNilton\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/chromedriver/chromedriver.exe");
        WebDriver driver = new ChromeDriver();
        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // (Espera Implicita)
        driver.manage().window().maximize();
