@@ -30,14 +30,14 @@ public class Tests extends Propriedades {
 		driver.get("http://google.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		dsl = new DSL(driver);
+		dsl = new DSL();
 	}
 	
 	@Test(priority=1)
 	@Story("Usuário adiciona taxa de serviço")
 	@Description("Usuário adiciona taxa de serviço com sucesso")
 	public void testando() {
-		dsl.escreverCampo3("q", "Globo Esporte");
+		dsl.escreverCampo("q", "Globo Esporte");
 		//driver.findElement(By.name("q")).sendKeys("Globo Esporte", Keys.ENTER);
 		String logo = driver.findElement(By.xpath("//a[@href='https://globoesporte.globo.com/']/h3")).getText();
 		assertEquals("Globo Esporte", logo);

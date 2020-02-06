@@ -1,5 +1,7 @@
 package tests;
 
+import static org.junit.Assert.assertEquals;
+
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;
@@ -7,22 +9,18 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-import pages.LoginPage;
-import suporte.Inicializar;
 
-import static org.junit.Assert.*;
+import pages.LoginPage;
+import suporte.DriverFactory;
 
 @RunWith(DataDrivenTestRunner.class)
 @DataLoader(filePaths = "InformacoesUsuarioTestData.csv")
 public class InformacoesUsuarioPageObjectsTest {
-    private WebDriver driver;
 
     @Before
     public void setUp(){
         //navegador = Web.createBrowserStack();
-        driver = Inicializar.createChrome();
-        driver.get("http://www.juliodelima.com.br/taskit");
+        DriverFactory.getDriver().get("http://www.juliodelima.com.br/taskit");
     }
 
     @Test
@@ -33,7 +31,7 @@ public class InformacoesUsuarioPageObjectsTest {
             @Param(name="contato")String contato,
             @Param(name="mensagemEsperada")String mensagemEsperada
      ){
-        String textoToast = new LoginPage(driver)
+        String textoToast = new LoginPage(DriverFactory.getDriver())
                 .clickSignin()
                 .fazerLogin(login, senha)
                 .clicarMe()
@@ -48,6 +46,6 @@ public class InformacoesUsuarioPageObjectsTest {
 
     @After
     public void tearDown(){
-        driver.quit();
+        DriverFactory.killDriver();
     }
 }

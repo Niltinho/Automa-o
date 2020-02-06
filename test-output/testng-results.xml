@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12395" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:26 BRT">
+  <suite name="Default suite" duration-ms="12545" started-at="2020-02-06T15:00:04 BRT" finished-at="2020-02-06T15:00:17 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12395" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:26 BRT">
+    <test name="Default test" duration-ms="12545" started-at="2020-02-06T15:00:04 BRT" finished-at="2020-02-06T15:00:17 BRT">
       <class name="tests.CadastrarUsuario">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="setUp" is-config="true" duration-ms="10074" started-at="2020-01-21T16:13:13 BRT" finished-at="2020-01-21T16:13:23 BRT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="setUp" is-config="true" duration-ms="10029" started-at="2020-02-06T15:00:04 BRT" finished-at="2020-02-06T15:00:14 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCadastrarUsuario()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario" duration-ms="1037" started-at="2020-01-21T16:13:23 BRT" finished-at="2020-01-21T16:13:24 BRT">
+        <test-method status="PASS" signature="testCadastrarUsuario()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario" duration-ms="1088" started-at="2020-02-06T15:00:14 BRT" finished-at="2020-02-06T15:00:15 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCadastrarUsuario -->
-        <test-method status="FAIL" signature="testCadastrarUsuario2()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario2" duration-ms="520" started-at="2020-01-21T16:13:24 BRT" finished-at="2020-01-21T16:13:25 BRT">
+        <test-method status="FAIL" signature="testCadastrarUsuario2()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="testCadastrarUsuario2" duration-ms="646" started-at="2020-02-06T15:00:15 BRT" finished-at="2020-02-06T15:00:16 BRT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Cadastrado!
@@ -55,7 +55,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at tests.CadastrarUsuario.testCadastrarUsuario2(CadastrarUsuario.java:70)
+at tests.CadastrarUsuario.testCadastrarUsuario2(CadastrarUsuario.java:67)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -90,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCadastrarUsuario2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="tearDown" is-config="true" duration-ms="637" started-at="2020-01-21T16:13:25 BRT" finished-at="2020-01-21T16:13:26 BRT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.CadastrarUsuario@15eb5ee5]" name="tearDown" is-config="true" duration-ms="628" started-at="2020-02-06T15:00:16 BRT" finished-at="2020-02-06T15:00:17 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

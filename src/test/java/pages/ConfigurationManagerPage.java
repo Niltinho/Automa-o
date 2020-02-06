@@ -48,7 +48,7 @@ public class ConfigurationManagerPage extends Propriedades{
 		driver.get("http://10.112.68.136:8180/cm-gui/pt.ptinovacao.cm.CM/index.html");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		dsl = new DSL(driver);
+		dsl = new DSL();
 	}
 
 	@Test
