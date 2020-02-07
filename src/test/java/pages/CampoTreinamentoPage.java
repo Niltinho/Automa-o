@@ -1,14 +1,8 @@
 package pages;
 
-import suporte.DSL;
+import suporte.BasePage;
 
-public class CampoTreinamentoPage {
-	
-	private DSL dsl;
-	
-	public CampoTreinamentoPage() {
-		dsl = new DSL();
-	}
+public class CampoTreinamentoPage extends BasePage{
 	
 	public CampoTreinamentoPage setNome(String nome) {
 		dsl.escreverCampo("elementosForm:nome", nome);

@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MePage extends BasePage {
+public class MePage extends MainPage {
 
     public MePage(WebDriver driver) {
         super(driver);

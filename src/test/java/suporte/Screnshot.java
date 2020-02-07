@@ -8,8 +8,8 @@ import java.io.File;
 
 
 public class Screnshot {
-    public static void tirar (WebDriver navegador, String arquivo){
-        File screenshot = ((TakesScreenshot) navegador).getScreenshotAs(OutputType.FILE);
+    public static void tirar (WebDriver geDriver, String arquivo){
+        File screenshot = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
         try{
            FileUtils.copyFile(screenshot, new File(arquivo));
         } catch (Exception e) {

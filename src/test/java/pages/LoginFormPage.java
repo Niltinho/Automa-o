@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginFormPage extends BasePage {
+public class LoginFormPage extends MainPage {
     public LoginFormPage(WebDriver driver) {
         super(driver);
     }

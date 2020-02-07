@@ -1,15 +1,25 @@
 package suporte;
 
+import java.io.File;
+
 import org.junit.After;
-import org.openqa.selenium.WebDriver;
+import org.junit.Rule;
+import org.junit.rules.TestName;
 
 public class BaseTest {
 	
-	WebDriver driver;
+	@Rule
+	public TestName testName = new TestName();
 	
 	@After
-	public void tearDown() {
-		driver.quit();
+	public void finaliza() {
+				
+		String arquivoPrint = "target" + File.separator +"print" + File.separator + testName.getMethodName() + Generator.dataHoraParaArquivo() + ".png";
+		Screnshot.tirar(DriverFactory.getDriver(), arquivoPrint);
+		
+		if(Propriedades.FECHAR_BROWSER) {
+		DriverFactory.killDriver();
+		}
 		
 	}
 

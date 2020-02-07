@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,10 +15,11 @@ import org.junit.runners.Parameterized.Parameters;
 
 //import pages.BasePage;
 import pages.CampoTreinamentoPage;
+import suporte.BaseTest;
 import suporte.DriverFactory;
 
 @RunWith(Parameterized.class)
-public class CadastrarUsuarioDD {
+public class CadastrarUsuarioDD extends BaseTest{
 	
 	private CampoTreinamentoPage campoTreinamentoPage;
 	//private BasePage basePage;
@@ -83,9 +83,4 @@ public class CadastrarUsuarioDD {
 		
 	}
 	
-	@After
-	public void tearDown() {
-		DriverFactory.killDriver();
-	}
-
 }

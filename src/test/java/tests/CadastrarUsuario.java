@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Story;
-import pages.BasePage;
+import pages.MainPage;
 import pages.CampoTreinamentoPage;
 import suporte.DriverFactory;
 
 public class CadastrarUsuario {
 	
 	private CampoTreinamentoPage campoTreinamentoPage;
-	private BasePage basePage;
+	private MainPage basePage;
 	
 	
 	@BeforeClass
@@ -23,7 +23,7 @@ public class CadastrarUsuario {
 		//driver.get("file:///C:/Users/Nilton/eclipse-workspace/EstudosNilton/componentes.html");
 		DriverFactory.getDriver().get("file:///C:/Users/318032/eclipse-workspace/Automacao/componentes.html");
 		campoTreinamentoPage = new CampoTreinamentoPage();
-		basePage = new BasePage(DriverFactory.getDriver());
+		basePage = new MainPage(DriverFactory.getDriver());
 	}
 	
 	@Description("Verificar que cadastro foi realizado com sucesso e as informações cadastradas estão corretas")
