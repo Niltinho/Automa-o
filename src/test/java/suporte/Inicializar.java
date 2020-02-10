@@ -1,13 +1,12 @@
 package suporte;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Inicializar {
     public static final String USERNAME = "niltonluciocorre1";
@@ -16,15 +15,13 @@ public class Inicializar {
 
     public static WebDriver createChrome() {
         // Abrindo o Navegador
-        System.setProperty("webdriver.chrome.driver", "/chromedriver/chromedriver.exe");
-       WebDriver driver = new ChromeDriver();
-       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // (Espera Implicita)
-       driver.manage().window().maximize();
+       DriverFactory.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // (Espera Implicita)
+       DriverFactory.getDriver().manage().window().maximize();
        
         // Navegando para a pagina do Taskit!
         //driver.get("http://www.juliodelima.com.br/taskit");
 
-        return driver;
+        return DriverFactory.getDriver();
     }
 
     public static WebDriver createBrowserStack(){
