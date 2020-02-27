@@ -25,7 +25,7 @@ public class Tests extends Propriedades {
 	
 	@BeforeClass
 	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\Nilton\\\\EstudosNilton\\\\chromedriver\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\318032\\Desktop\\Nilton\\Teste\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://google.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

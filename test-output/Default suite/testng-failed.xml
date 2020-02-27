@@ -5,6 +5,7 @@
     <classes>
       <class name="tests.CadastrarUsuario">
         <methods>
+          <include name="testCadastrarUsuario"/>
           <include name="testCadastrarUsuario2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
